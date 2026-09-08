@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8d1737" />
+  <meta name="description" content="Kavya & Vilas — Engagement Ceremony digital invitation." />
+  <title>Kavya & Vilas | Engagement Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-lamp">🪔</div>
+    <p>With love, an invitation awaits...</p>
+  </div>
+
+  <div class="petal-layer" aria-hidden="true"></div>
+
+  <main>
+    <!-- Opening screen -->
+    <section id="cover" class="cover">
+      <div class="cover-art"></div>
+      <div class="cover-overlay"></div>
+
+      <div class="cover-content reveal">
+        <div class="ornament">✦</div>
+        <p class="eyebrow">A BEAUTIFUL BEGINNING</p>
+        <h1>Kavya <span>&amp;</span> Vilas</h1>
+        <p class="cover-subtitle">Engagement Ceremony</p>
+        <div class="gold-line"></div>
+        <p class="date-preview">We invite you to celebrate our special day</p>
+
+        <button id="openInvitation" class="luxury-btn">
+          <span>Explore Invitation</span>
+          <b>→</b>
+        </button>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll to explore</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- Invitation -->
+    <section id="invitation" class="section intro">
+      <div class="mandala mandala-left">✺</div>
+      <div class="mandala mandala-right">✺</div>
+
+      <div class="section-inner reveal">
+        <div class="tiny-ornament">❧</div>
+        <p class="eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+        <h2>Two hearts, one beautiful promise.</h2>
+        <p class="lead">
+          With the blessings of our families and the love of everyone dear to us,
+          we invite you to join us as we celebrate the engagement of
+          <strong>Kavya &amp; Vilas</strong>.
+        </p>
+
+        <div class="names-card">
+          <div class="name-block">
+            <span>THE BRIDE</span>
+            <strong>Kavya</strong>
+          </div>
+          <div class="ampersand">&amp;</div>
+          <div class="name-block">
+            <span>THE GROOM</span>
+            <strong>Vilas</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event details -->
+    <section class="section details">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">SAVE THE DATE</p>
+          <h2>Join us for the celebration</h2>
+          <div class="gold-line"></div>
+        </div>
+
+        <div class="event-grid">
+          <article class="event-card reveal">
+            <div class="event-icon">◷</div>
+            <p class="card-label">DATE</p>
+            <h3>Saturday</h3>
+            <strong>12 December 2026</strong>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-icon">♢</div>
+            <p class="card-label">TIME</p>
+            <h3>6:30 PM</h3>
+            <strong>Reception &amp; Ceremony</strong>
+          </article>
+
+          <article class="event-card reveal">
+            <div class="event-icon">⌂</div>
+            <p class="card-label">VENUE</p>
+            <h3>The Grand Hall</h3>
+            <strong>Chennai, Tamil Nadu</strong>
+          </article>
+        </div>
+
+        <a class="map-btn reveal" target="_blank" rel="noopener"
+           href="https://www.google.com/maps/search/?api=1&query=Chennai%2C%20Tamil%20Nadu">
+          Open venue in Maps ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Theme artwork -->
+    <section class="section artwork-section">
+      <div class="artwork-wrap reveal">
+        <img src="theme.jpg" alt="Traditional engagement ceremony artwork" />
+        <div class="artwork-caption">
+          <span>SHUBHAM</span>
+          <strong>May this new chapter be filled with love.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="section countdown-section">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">THE MOMENT IS NEAR</p>
+          <h2>Counting every beautiful second</h2>
+        </div>
+
+        <div class="countdown reveal" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wishes -->
+    <section class="section wishes">
+      <div class="section-inner reveal">
+        <div class="tiny-ornament">❧</div>
+        <p class="eyebrow">SEND YOUR BLESSINGS</p>
+        <h2>Be a part of our happiness</h2>
+        <p class="lead">Your presence and blessings will make our celebration even more memorable.</p>
+
+        <form id="wishForm" class="wish-form">
+          <input id="guestName" type="text" placeholder="Your name" autocomplete="name" required />
+          <textarea id="wishMessage" rows="4" placeholder="Write your wishes..." required></textarea>
+          <button class="luxury-btn dark" type="submit">
+            <span>Send Wishes</span><b>♥</b>
+          </button>
+        </form>
+        <p id="wishStatus" class="wish-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="tiny-ornament">✦</div>
+      <p>With love,</p>
+      <h2>Kavya &amp; Vilas</h2>
+      <small>Made with love for a beautiful beginning.</small>
+    </footer>
+  </main>
+
+  <button id="topBtn" class="top-btn" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
