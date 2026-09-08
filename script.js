@@ -6,13 +6,20 @@ const loader = document.getElementById("loader");
 const openInvitation = document.getElementById("openInvitation");
 const invitation = document.getElementById("invitation");
 const topBtn = document.getElementById("topBtn");
-
+const weddingMusic = document.getElementById("weddingMusic");
 // Opening animation
 window.addEventListener("load", () => {
   setTimeout(() => loader.classList.add("hide"), 700);
 });
 
 openInvitation.addEventListener("click", () => {
+
+  // Start wedding music
+  weddingMusic.volume = 0.5;
+  weddingMusic.play().catch(error => {
+    console.log("Audio playback blocked:", error);
+  });
+
   invitation.scrollIntoView({ behavior: "smooth" });
   createPetals(22);
 });
