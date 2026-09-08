@@ -59,7 +59,7 @@ setTimeout(() => createPetals(8), 1800);
 
 // Countdown
 // Change this date/time to your real engagement date.
-const eventDate = new Date("December 12, 2026 18:30:00").getTime();
+const eventDate = new Date("September 13, 2026 10:30:00").getTime();
 
 function updateCountdown() {
   const now = Date.now();
