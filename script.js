@@ -90,7 +90,7 @@ setInterval(updateCountdown, 1000);
 // Wishes form
 // This demo opens WhatsApp with the entered wish.
 // Replace the phone number below with the couple/family WhatsApp number.
-const WHATSAPP_NUMBER = "919999999999";
+const WHATSAPP_NUMBER = "9195515 55093";
 
 document.getElementById("wishForm").addEventListener("submit", (event) => {
   event.preventDefault();
@@ -102,7 +102,8 @@ document.getElementById("wishForm").addEventListener("submit", (event) => {
   if (!name || !message) return;
 
   const text =
-    `Engagement Wishes for Kavya & Vilas%0A%0A` +
+    `Engagement Wishes for Monalisa ❤️ & Ramachandran❤️
+    %0A%0A` +
     `From: ${encodeURIComponent(name)}%0A` +
     `Message: ${encodeURIComponent(message)}`;
 
